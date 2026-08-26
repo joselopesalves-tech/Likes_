@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e8edf3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartao{
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 40px 10px rgba(0,0,0,0.2);
+}
+h1{
+    color: #333333;
+}
+.area-likes{
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.likes{
+    padding: 8px;
+    font-size: 35px;
+    background-color: #eeeeee;
+    border: 2px solid #cccccc;
+    border-radius: 10px;
+    cursor: pointer;
+    filter: grayscale(100%)
+    opacity:1;
+    transition: 0.3s;
+}
+.likes:hover {
+    border-color: lightblue;
+    transform: scale(1.2);
+}
+    .likes.ativo{
+        background-color: #dbeaff;
+        border-color: lightblue;
+        filter: grayscale(0%);
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    .resultado{
+        color: #444444;
+        font-size: 25px;
+        font-weight: bold;
+    }

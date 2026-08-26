@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <main>
+    <main class="cartao">
         <h1>Avaliação de conteudo</h1>
-        <p>Passe o moude sobre os icones</p>
+        <p>Passe o mouse sobre os icones</p>
         <div class="area-likes">
-            <button class="likes"> &#128077; </button>
-            <button class="likes"> &#128077; </button>
-            <button class="likes"> &#128077; </button>
-            <button class="likes"> &#128077; </button>
-            <button class="likes"> &#128077; </button>
+            <button class="likes" data-valor="1"> &#128077; </button>
+            <button class="likes" data-valor="2"> &#128077; </button>
+            <button class="likes" data-valor="3"> &#128077; </button>
+            <button class="likes" data-valor="4"> &#128077; </button>
+            <button class="likes" data-valor="5"> &#128077; </button>
         </div>
-        <p class="resultado"> LIKES: <span> 0 </span> </p>
-        
+        <p class="resultado"> LIKES: <span id="contador"> 0 </span> </p>
     </main>
 </body>
 </html>
