@@ -1,53 +1,58 @@
-body{
+body { /* Configuração geral da página */
     margin: 0;
     height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #e8edf3;
-    display: flex;
+    display: flex;     /* Centraliza o conteúdo */
     justify-content: center;
     align-items: center;
 }
-.cartao{
+.cartao {/* Caixa principal */
     width: 400px;
     padding: 30px;
     text-align: center;
     background-color: white;
     border-radius: 12px;
-    box-shadow: 0 40px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-h1{
+h1 {  /* Título */
     color: #333333;
 }
-.area-likes{
+.area-likes {  /* Organiza os botões lado a lado */
     margin: 25px 0;
     display: flex;
     justify-content: center;
     gap: 10px;
 }
-.likes{
+.like {  /* Aparência inicial dos joinhas */
     padding: 8px;
     font-size: 35px;
     background-color: #eeeeee;
     border: 2px solid #cccccc;
-    border-radius: 10px;
+    border-radius: 8px;
     cursor: pointer;
-    filter: grayscale(100%)
-    opacity:1;
+    filter: grayscale(100%); /* Deixa o joinha sem cor */
+    opacity: 0.4;
     transition: 0.3s;
 }
-.likes:hover {
-    border-color: lightblue;
-    transform: scale(1.2);
+.like:hover {  /* Efeito ao passar o mouse */
+    border-color: #1877f2;
+    transform: scale(1.1);
 }
-    .likes.ativo{
-        background-color: #dbeaff;
-        border-color: lightblue;
-        filter: grayscale(0%);
-        opacity: 1;
-        transform: scale(1.1);
-    }
-    .resultado{
-        color: #444444;
-        font-size: 25px;
-        font-weight: bold;
-    }
+.like.ativo {  /* Aparência dos joinhas selecionados */
+    background-color: #dbeaff;
+    border-color: #1877f2;
+    filter: grayscale(0%);/* Mostra a cor original do joinha */
+    opacity: 1;
+    transform: scale(1.1);
+}
+.resultado {  /* Área do resultado */
+    color: #444444;
+    font-size: 18px;
+}
+#contador { /* Número do contador */
+    color: #1877f2;
+    font-size: 25px;
+    font-weight: bold;
+}
+
